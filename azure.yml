@@ -1,0 +1,12 @@
+import random
+
+adjectives = ['adorable', 'beautiful', 'clean', 'drab', 'elegant', 'fancy', 'glamorous', 'handsome', 'long', 'magnificent', 'old-fashioned', 'plain', 'quaint', 'sparkling', 'ugliest', 'unsightly', 'wide-eyed', 'alive', 'better', 'careful', 'clever', 'dead', 'easy', 'famous', 'gifted', 'helpful', 'important', 'inexpensive', 'mushy', 'odd', 'powerful', 'rich', 'shy', 'tender', 'uninterested', 'vast', 'wrong']
+
+nouns = ['women', 'men', 'children', 'teeth', 'feet', 'people', 'leaves', 'mice', 'geese', 'halves', 'knives', 'wives', 'lives', 'elves', 'loaves', 'potatoes', 'tomatoes', 'cacti', 'foci', 'fungi', 'nuclei', 'syllabuses', 'analyses', 'diagnoses', 'oases', 'theses', 'crises', 'phenomena', 'criteria', 'data']
+
+def generate_name():
+  return random.choice(adjectives) + ' ' + random.choice(nouns)
+
+# Generate 10 random names
+for i in range(10):
+  print(generate_name())
